@@ -12,25 +12,30 @@ https://devcenter.heroku.com/articles/getting-started-with-ruby
 
 	touch web.rb
 
-	Add this:
+Add this:
 
-		require 'sinatra'
+	require 'sinatra'
 
-		get '/' do
-		  "Hello, world"
-		end
+	get '/' do
+		"Hello, world"
+	end
 
-#### Create Gemfile:
+#### Create Gemfile
+
+Even if your app has no gem dependencies, you should still create an empty Gemfile in order that it appear as a Ruby app.:
 
 	touch Gemfile
 
-	Add this:
+Add this:
 
+	source "https://rubygems.org"
+	ruby "2.0.0" #Or ruby "1.9.3"
+	gem 'sinatra', '1.1.0'
 
-
-Even if your app has no gem dependencies, you should still create an empty Gemfile in order that it appear as a Ruby app.
 
 #### Create Procfile:
+
+A Procfile a text file in the root directory of your application, to explicitly declare what command should be executed to start a web dyno. 
 
 	touch Procfile
 
@@ -38,7 +43,7 @@ Add this:
 
 	web: bundle exec ruby web.rb -p $PORT
 
-A Procfile a text file in the root directory of your application, to explicitly declare what command should be executed to start a web dyno. 
+
 
 
 
