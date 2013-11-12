@@ -44,6 +44,10 @@ Add this:
 	web: bundle exec ruby web.rb -p $PORT
 
 
+#### Run <code> bundle install <code>
 
+#### Install and Run <code> foreman start <code>
+
+####  Run <code> heroku create <code> 
 
 
