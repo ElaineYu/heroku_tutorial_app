@@ -1,22 +1,38 @@
-Getting Started with Heroku
+#Getting Started with Heroku
 
 https://devcenter.heroku.com/articles/getting-started-with-ruby
 
-Commands
+##Commands
 
-####Login to Heroku
-heroku login
+####Login to Heroku:
 
-#### Create web.rb (add code)
-touch web.rb
+	heroku login
+
+#### Create web.rb:
+
+	touch web.rb
+
+	Add this:
+
+		require 'sinatra'
+
+		get '/' do
+		  "Hello, world"
+		end
 
 #### Create Gemfile:
-touch Gemfile
+
+	touch Gemfile
+
+	Add this:
+
+
 
 Even if your app has no gem dependencies, you should still create an empty Gemfile in order that it appear as a Ruby app.
 
-####  Create Procfile:
-touch Procfile
+#### Create Procfile:
+
+	touch Procfile
 
 Add this: 
 
