@@ -44,17 +44,18 @@ Add this:
 	web: bundle exec ruby web.rb -p $PORT
 
 
-#### Run <code> bundle install <code>
-#### Install and Run <code> foreman start <code>
-####  Run <code> heroku create <code> 
-#### Run <code> git push heroku master <code>
-
+#### Run in command line:
+<code> bundle install <code>
+#### Install and Run 
+<code> foreman start <code>
+####  Run 
+<code> heroku create <code> 
+#### Run 
+<code> git push heroku master <code>
 #### Ensure one dyno is running
 <code> heroku ps:scale web=1 <code>
-
 #### Check the state of app's dyno
 <code> heroku ps <code>
-
-### Open app in browser 
+#### Open app in browser 
 <code>heroku open</code>
 
